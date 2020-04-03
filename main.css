@@ -2,11 +2,19 @@
   background: #ff1b68;
 }
 
+/* Class have higher specificity than tag selector */
+.section-title {
+  color: #2ddf5c;
+}
+
+/* The latter selector in same file has higher priority */
+/* This has lower specificity */
 h1 {
   color: #ffffff;
   font-family: 'Anton', sans-serif;
 }
 
-.section-title {
-  color: #2ddf5c;
+/* This has higher specificity */
+h1 {
+  font-family: serif;
 }
