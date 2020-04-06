@@ -1,20 +1,29 @@
-#product-overview {
-  background: #ff1b68;
+/* Box sizing is added using universal selector and not to body tag. This is because 
+  box-sizing inheritance does not work when added to body tag, because of the block-level 
+  nature of other elements. */
+* {
+  box-sizing: border-box;
 }
 
-/* Class have higher specificity than tag selector */
+body {
+  font-family: 'Montserrat', sans-serif;  
+}
+
+/* Height, when box sizing is border-box, includes the padding and border itself. 
+   Margin is not included in height*/
+#product-overview {
+  background: #ff1b68;
+  height: 528px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 15px;
+}
+
 .section-title {
   color: #2ddf5c;
 }
 
-/* The latter selector in same file has higher priority */
-/* This has lower specificity */
 h1 {
   color: #ffffff;
   font-family: 'Anton', sans-serif;
-}
-
-/* This has higher specificity */
-h1 {
-  font-family: serif;
 }
