@@ -1,16 +1,12 @@
-/* Box sizing is added using universal selector and not to body tag. This is because 
-  box-sizing inheritance does not work when added to body tag, because of the block-level 
-  nature of other elements. */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
-/* Height, when box sizing is border-box, includes the padding and border itself. 
-   Margin is not included in height*/
 #product-overview {
   background: #ff1b68;
   height: 528px;
@@ -26,4 +22,27 @@ body {
 h1 {
   color: #ffffff;
   font-family: 'Anton', sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #2ddf5c;
+}
+
+/* Nav items are displayed as inline-block.
+  They are block by default. 
+  They cannot be inline, since margin top/bottom and padding top/bottom does not work on them.
+  Additionally, if we add padding to inline element, the box-model gets ut of parent when padding
+  is too large, which is a weird behaviour */
+.brand {
+  display: inline-block;
+}
+
+.main-nav {
+  display: inline-block;
+}
+
+.main-nav__item {
+  display: inline-block;
 }
