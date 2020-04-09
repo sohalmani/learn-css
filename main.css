@@ -30,17 +30,25 @@ h1 {
   background-color: #2ddf5c;
 }
 
-/* Nav items are displayed as inline-block.
-  They are block by default. 
-  They cannot be inline, since margin top/bottom and padding top/bottom does not work on them.
-  Additionally, if we add padding to inline element, the box-model gets ut of parent when padding
-  is too large, which is a weird behaviour */
-.brand {
+.main-header > div {
   display: inline-block;
 }
 
+
+/* Display inline-block has a weird behaviour. Two adjacent elements of inline-block usually 
+  have a whitespace betwwen them(roughly 4px). Either you can subtract 5px more or you can place 
+  inline divs in html without whitespace(Check HTML) */
+
 .main-nav {
   display: inline-block;
+  width: calc(100% - 55px);
+  text-align: right;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__item {
