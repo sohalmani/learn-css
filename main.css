@@ -32,17 +32,21 @@ h1 {
 
 .main-header > div {
   display: inline-block;
+  vertical-align: middle;
 }
 
-
-/* Display inline-block has a weird behaviour. Two adjacent elements of inline-block usually 
-  have a whitespace betwwen them(roughly 4px). Either you can subtract 5px more or you can place 
-  inline divs in html without whitespace(Check HTML) */
+.main-header__brand {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0e4f1f;
+}
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 55px);
+  width: calc(100% - 75px);
   text-align: right;
+  vertical-align: middle;
 }
 
 .main-nav__items {
@@ -53,4 +57,10 @@ h1 {
 
 .main-nav__item {
   display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item > a {
+  color: #0e4f1f;
+  text-decoration: none;
 }
