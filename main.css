@@ -27,6 +27,11 @@ h1 {
   width: 100%;
   padding: 8px 16px;
   background-color: #2ddf5c;
+  font-size: 0;
+}
+
+.main-header * {
+  font-size: initial;
 }
 
 .main-header > div {
@@ -43,7 +48,7 @@ h1 {
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 75px);
+  width: calc(100% - 69px);
   text-align: right;
   vertical-align: middle;
 }
