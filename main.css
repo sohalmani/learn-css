@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
 #product-overview {
   background: url('freedom.jpg');
   width: 100%;
@@ -34,12 +39,6 @@ body {
   vertical-align: middle; 
 }
 
-/* Box shadow acceptpts six arguements.
-*  box-shadow: inset/null x-axis y-axis blurriness spread color 
-*  inset keyword is used to define inner shadow. Not mandatory. 
-*  x-axis and y-axis define position of shadow. Blur and spread can
-*  be mentioned, without them, a sharp shadow is produced.
-*/
 .plan--highlighted {
   background-color: #19b84c;
   color: #ffffff;
@@ -101,9 +100,15 @@ body {
   outline: none;
 }
 
-.section-title {
-  color: #2ddf5c;
-  text-align: center;
+#key-features {
+  background-color: #ff1b58;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: #ffffff;
+  margin: 32px;
 }
 
 .main-header {
